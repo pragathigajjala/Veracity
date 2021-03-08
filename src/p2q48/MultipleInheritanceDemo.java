@@ -13,8 +13,8 @@ class Parent2{
     }
 }
 
-public class MultipleInheritanceDemo extends Parent1,Parent2{ //CE error
+/*public class MultipleInheritanceDemo extends Parent1,Parent2{ //CE error
     MultipleInheritanceDemo child=new MultipleInheritanceDemo();
     child.show(); //Diamond problem; Whether to call Parent1 show() or Parent2 show()
-}
+}*/
 
