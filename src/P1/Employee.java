@@ -1,5 +1,8 @@
 package P1;
-public class Employee {
+
+import p2q53.Product;
+
+public class Employee implements Cloneable {
     private int id;
     private String name;
     private int sal;
@@ -36,6 +39,29 @@ public class Employee {
 
     public void setSal(int sal) {
         this.sal = sal;
+    }
+
+   public String toString()
+    {
+        return getId()+" "+getName()+" "+getSal();
+    }
+
+    public Object clone() throws CloneNotSupportedException
+    {
+        return super.clone();
+    }
+
+    public boolean equals(Object o){
+        Employee e2=(Employee)o;
+        if(id==e2.id&&name==e2.name&&sal==e2.sal)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
     }
 }
 

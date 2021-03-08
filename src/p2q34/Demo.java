@@ -4,15 +4,13 @@ import java.util.Scanner;
 public class Demo {
     public static void main(String[] args) {
         //take data id,name,salary from user using scanner and display that data in show method
-        int id,sal;
-        String name;
         Scanner obj=new Scanner(System.in);
         System.out.println("Enter Employee id:");
-        id=obj.nextInt();
+        int id=obj.nextInt();
         System.out.println("Enter Employee name:");
-        name=obj.nextLine();
+        String name=obj.next();
         System.out.println("Enter Employee salary:");
-        sal=obj.nextInt();
+        int sal=obj.nextInt();
         Employee e=new Employee();
         e.setId(id);
         e.setName(name);
