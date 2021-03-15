@@ -1,5 +1,4 @@
 package p2q25;
-
 import P1.Employee;
 
 public class Demo {

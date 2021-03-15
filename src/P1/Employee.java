@@ -2,7 +2,7 @@ package P1;
 
 import p2q53.Product;
 
-public class Employee implements Cloneable {
+public class Employee implements Cloneable,Comparable {
     private int id;
     private String name;
     private int sal;
@@ -62,6 +62,13 @@ public class Employee implements Cloneable {
             return false;
         }
 
+    }
+
+    @Override
+    public int compareTo(Object o) {
+        Employee e1=(Employee)o;
+      //  return this.id-e1.getId(); //for ascending order wrt Ids
+          return e1.getId()-this.id;
     }
 }
 
